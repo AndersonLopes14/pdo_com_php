@@ -1,15 +1,18 @@
 <?php
 
-$serverName         ='localhost';
-$userName           ='root';
-$passWd             ='';
-$dbname             ='meu_primeiro_banco';
+    $serverName     = 'localhost';
+    $userName       = 'root';
+    $passWd         = '';
+    $dbname         = 'meu_primeiro_banco';
 
-try {
-    $conn = new pdd("mysql:host=$serveName;dbname=$dbname",$userName,$passWd)
-$conn->setAtribute(PDO::attr_errmode,PDO::errmode_exception);
-} catch(PDOxception $erro) {
-    echo 'Conexão falhou: ' .$erro->getMessage()
-}
+    try {
+        $conn = new PDO("mysql:host=$serverName;dbname=$dbname", $userName, $passWd);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    } catch (PDOException $erro) {
+        
+        echo 'Conexão falhou: ' . $erro->getMessage();
+    }
+
 
 ?>
