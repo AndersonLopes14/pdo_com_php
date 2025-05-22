@@ -4,7 +4,7 @@ include_once('conexao.php');
 
 $id = $_GET['id'];
 
-$querySQL = "UPDATE usuario_higor SET status = :cod WHERE cod_usuario LIKE $id";
+$querySQL = "UPDATE usuario_anderson SET status = :cod WHERE cod_usuario LIKE $id";
 
 $exec = $conn->prepare($querySQL);
 

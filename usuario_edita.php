@@ -25,7 +25,7 @@
 
 include_once('conexao.php');
 
-$sql = "SELECT * FROM usuario_anderson where status like 1";
+$sql = "SELECT * FROM usuario_andeson where status like 1";
 
 $executa = $conn->prepare($sql);
 
