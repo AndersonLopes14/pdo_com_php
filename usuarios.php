@@ -25,7 +25,7 @@
 
 include_once('conexao.php');
 
-$sql = "SELECT * FROM usuario_Anderson WHERE status LIKE 1";
+$sql = "SELECT * FROM usuario_anderson WHERE status LIKE 1";
 
 $executa = $conn->prepare($sql);
 
@@ -93,6 +93,16 @@ $resultados = $executa->fetchAll(PDO::FETCH_OBJ);
                         }
 
                         ?>
+                         <tr>
+                            <td>
+                                <a href="http://192.168.1.25/TRILHAS4/Anderson/pdo_com_php/novousuario.php">
+                                    <i class="fas fa-plus-square"></i>
+                                </a>
+                            </td>
+                            <td colspan="4">
+                                <a href="http://192.168.1.25/TRILHAS4/Anderson/pdo_com_php/novousuario.php">Novo usuário</a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
 
