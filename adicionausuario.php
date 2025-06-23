@@ -8,7 +8,7 @@ if( $_POST['bt-salvar'] ) {
     $email      = $_POST['email'];
     $senha      = $_POST['senha'];
 
-    $querySQL   = "usuario_igormoura SET (nome, email, senha, status) VALUES (?, ?, ?, 1)";
+    $querySQL   = "usuario_anderson SET (nome, email, senha, status) VALUES (?, ?, ?, 1)";
 
     $executa    = $conn->prepare($querySQL);
     $executa->execute([$nome, $email, $senha]);
